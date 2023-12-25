@@ -1,0 +1,13 @@
+Near, far, and huge pointers are terms that were used in older memory models of x86-based systems, primarily in the context of 16-bit programming. These terms are not commonly used in modern programming and are largely irrelevant on modern 32-bit and 64-bit systems. However, understanding them can provide historical context for memory segmentation in early computing.
+
+In the memory model of older x86 systems, memory was divided into segments, and each segment had a specific purpose and size. Pointers were used to reference memory locations within these segments.
+
+Near Pointer: A near pointer is a 16-bit pointer that references memory within the same segment as the pointer itself. It can address up to 64 KB of memory, which was the size of a segment in the x86 memory model. Near pointers are used for addressing data within the same code segment, data segment, or stack segment.
+
+Far Pointer: A far pointer is also a 16-bit pointer, but it references memory in a different segment from the pointer itself. It consists of a 16-bit offset and a 16-bit segment selector, allowing access to memory beyond the 64 KB limit of a single segment. Far pointers were used to access data in other segments, such as calling functions located in different segments.
+
+Huge Pointer: A huge pointer is an extension of the far pointer concept. It's a 32-bit pointer that combines a 16-bit segment selector and a 16-bit offset. This allows addressing much larger amounts of memory, but it still retains the segmented memory model.
+
+These memory models and their associated pointers were used to manage memory in 16-bit environments where direct access to larger amounts of memory was not possible due to the limitations of the hardware architecture at the time. However, with the transition to 32-bit and later 64-bit systems, flat memory models became the norm, and these concepts of near, far, and huge pointers became obsolete.
+
+In modern programming, memory is usually accessed using flat memory models, where a single pointer can address the entire memory space directly. The near, far, and huge pointer concepts are no longer relevant, but they offer insights into the evolution of computing architectures and the challenges that early programmers faced in managing memory and addressing limitations.

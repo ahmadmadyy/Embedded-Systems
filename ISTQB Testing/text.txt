@@ -1,0 +1,16 @@
+Structure Testing:
+	White box technique
+	Black box technique 
+
+
+
+Change based testing: change-related testing
+
+
+V Model: early stage testing
+
+Agile: 3 to 9 people only and sprints takes from 3 weeks to 1 month
+silver hub, golden hub certificate to work on agile
+
+verification: technical
+validation: need of a customer

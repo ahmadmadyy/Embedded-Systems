@@ -1,0 +1,16 @@
+Dynamic Memory Allocation
+
+1. malloc(): returns the pointer showing the base address of the saved memory in heap
+char *p = malloc(5*sizeof(int)) reserves 20 bytes and moves in steps of 1.
+int *p = malloc(5*sizeof(int)) reserves 20 bytes and moves in steps of 4, ptr++ moves 4
+returns void*. thus needs to be casted. if not the compiler does the implicit casting 
+    based on the return type. int *p = (int*) malloc(5*sizeof(int))
+The first address is a garbage value. If allocation failed, returns NULL.
+
+2. calloc(): int *p = (int*) calloc(5*sizeof(int)), difference is the initial address 
+    is 0, not a garbage value. If allocation failed, returns NULL.
+
+3. realloc(): ptr = realloc(ptr, 10*sizeof(int)) problem: when reallocating, the old
+    reserved memory will be lost and can't be retrieved. 
+
+4. p2 = ptr, then free(ptr), removes the old unused memory freed. 

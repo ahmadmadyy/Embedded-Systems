@@ -1,0 +1,9 @@
+
+gcc file.c -> file.exe
+
+
+gcc --help  -> gets all tools
+
+
+gcc -E file.c > t.i   -> preprocessor
+

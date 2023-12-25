@@ -1,0 +1,18 @@
+In a struct, an uninitialized array has to be the last element in order to save memory for it.
+
+Inside an struct, no variable can be initialzied. In the main only.
+
+Change the order of variables in a structure to save memory, the biggest 1st.
+
+#pragma pack(1) allows lowest space saving, it is not preprosessive directive, 
+and allows 1 byte space saving. Saves RAM, but reduces execution time. 
+#pragma pack(2) force the compiler to reserve space in RAM by 2 bytes.
+2 is faster than 1, increasing the number increases the speed
+
+char x:3 allows the selection of only 3 bits for example
+
+Typedef: Happens during compile time, syntax chack and text replacement.
+
+Memory Acessing is done in 1 or 2 or 4 or 8 bytes at a time, done by compiler automatic.
+
+(*p).variable1 is the same as p->variable1
